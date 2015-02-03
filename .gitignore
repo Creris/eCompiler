@@ -1,2 +1,4 @@
 *.vcxproj
 *.filters
+Release/
+Debug/
