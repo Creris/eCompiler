@@ -1,0 +1,30 @@
+- renamed _FState into FileState
+- renamed _File to CFile(Compiletime File)
+- removed 2.5.2.1.23 (Compiler.isJassOnlyCompilcation)
+- removed 2.5.2.1.17, .18 and .19 (Compiler.returnType, Compiler.argumentType, Compiler.typeOf)
+	- these would be unparsable
+	
+- made FileState, File and Compiler compiletime structs
+- removed keyword class, as it is deemed useless by me
+- lowered the number of context sensitive keywords(24 -> 5)
+- split compiletime and constant
+- added 1.4.5(Comp-Qualifier)
+- moved 1.3.1 -> 1.3.4
+- removed 3.2.2(shadowing)
+- added 1.3.1, 1.3.1.1, 1.3.2, 1.3.2.1, 1.3.2.2, 1.3.2.2.1, 1.3.3 (Global Scope, Global, Scope resolution, Scope resolution rules, using, white spaces, shadowing[generalized rule for shadowing])
+- removed 8.9.2 - backwards compatible operators(the ones that are supported in current JassHelper, e.g. operator ee= -> e.ee = ...)
+- dropped old static if syntax(unfeasible to have)
+- removed LIBRARY_XXX syntax for static ifs
+- removed visibility block from interfaces(useless, visibility can be set to anything for given methods)
+- added 18.3.1 (sizeof)
+- removed scope modifiers scope_ and library_
+- removed 20. (LKRM mode), obsoleting //! syntax, but it is kept in the lexer for potential future use
+- added 1.19(preprocessor)
+- removed prefix increment/decrement syntax
+- postfix increment/decrement can no longer be used inside expressions, but can only be as expression itself
+- removed super as keyword(it is more of modifier than keyword)
+- added 1.8.2.6 (compiletime struct)
+- moved Compiler class to 2.5.2
+- added 2.5.1, 2.5.1.1, 2.5.1.2, 2.5.1.3, 2.5.1.4, 2.5.1.5[special types for Compiler struct] (Special Types, _rconstruct, _pconstruct, _type, _callable_object, _variable)
+- added rule 3 for 2.6.2 (Implicit conversion)
+- removed { [x]: y, [x2]: y2 } syntax from array initialization(would not be feasible to parse)
