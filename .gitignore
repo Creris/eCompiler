@@ -2,3 +2,4 @@
 *.filters
 Release/
 Debug/
+*.j
