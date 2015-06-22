@@ -1,5 +1,11 @@
 *.vcxproj
 *.filters
+*.sdf
 Release/
 Debug/
 *.j
+*.rar
+*.vector
+src/Lexer/Lexer3.cpp
+src/Lexer/Lexer3.hpp
+src/Temp Source.cpp
